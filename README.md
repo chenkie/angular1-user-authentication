@@ -1,6 +1,6 @@
 # Angular 1.x Authentication for Front End Masters
 
-## Protecting Routes Challanges
+## Protecting Routes Challenges
 
 * Add `data { requiresLogin: true }` to the `/profile`, `/instructor` and `/instructor/new` routes
 * Add a method called `isAdmin` to `auth.service.js` and conditionally show and hide the **Add Instructor** button in the `/instructor` view based on whether the user is authenticated and is an admin
