@@ -1,8 +1,11 @@
 # Angular 1.x Authentication for Front End Masters
 
-## Client Side Session Challenges
+## Implementing Authentication Challenges
 
-* Conditionally hide and show the **Log In** and **Log Out** links and buttons based on whether the user's JWT is expired (Hint: there's a method from angular-jwt that can help)
+* Complete the `onLoginSubmit` and `onSignupSubmit` methods to make `POST` requests (sending the user's credentials) to the `api/users/authenticate` and `api/users` endpoints respectively
+* Provide a method in `auth.service.js` which saves the returned JWT in local storage
+* Create a `logout` method which removes the user's JWT from local storage
+* Provide buttons for **Log In** and **Log Out** in the home view and the toolbar
 
 ## Running the App
 
