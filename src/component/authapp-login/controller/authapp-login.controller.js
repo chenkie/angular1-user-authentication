@@ -7,25 +7,15 @@ class AuthappLogin {
   errorMessage = '';
 
   onLoginSubmit(credentials) {
-    this.$http.post(`${API_URL}/users/authenticate`, credentials)
-      .then(response => {
-        this.authService.finishAuthentication(response.data.token);
-        this.login = {};
-        this.authManager.authenticate();
-        this.$state.go('home');
-      }, err => {
-        this.errorMessage = err.data.message;
-      });
+    // make a POST request to /users/authenticate
+    // and call finishAuthentication if successful,
+    // or display an error if unsuccessful
   }
 
   onSignupSubmit(credentials) {
-    this.$http.post(`${API_URL}/users`, credentials)
-      .then(response => {
-        this.authService.finishAuthentication(response.data.token);
-        this.signup = {};
-      }, err => {
-        this.errorMessage = err.data.message;
-      });
+    // make a POST request to /users
+    // and call finishAuthentication if successful,
+    // or display an error if unsuccessful
   }
 }
 

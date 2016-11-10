@@ -1,12 +1,9 @@
 class AuthService {
 
-  logout() {
-    localStorage.removeItem('token');
-  }
+  // creat a method to log the user out by 
+  // removing the token from local storage
 
-  finishAuthentication(token) {
-    localStorage.setItem('token', token);
-  }
+  // provide a function to save the JWT in local storage
 
   getToken() {
     return localStorage.getItem('token');
