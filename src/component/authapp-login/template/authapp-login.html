@@ -1,0 +1,36 @@
+<div class="col-sm-6 col-sm-offset-3">
+  <uib-tabset active="active">
+    <uib-tab index="0" heading="Log In">
+      <form ng-submit="vm.onLoginSubmit(vm.login)">
+        <div class="form-group">
+          <label for="user">Username/Email</label>
+          <input type="text" class="form-control" placeholder="Enter your email" name="user" ng-model="vm.login.user" required>
+        </div>
+        <div class="form-group">
+          <label for="username" class="">Password</label>
+          <input type="password" class="form-control" placeholder="Enter your password" name="password" ng-model="vm.login.password" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+      <div class="alert alert-danger" ng-if="vm.errorMessage">{{ vm.errorMessage }}</div>
+    </uib-tab>
+    <uib-tab index="1" heading="Sign Up">
+      <form ng-submit="vm.onSignupSubmit(vm.signup)">
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input type="text" class="form-control" placeholder="Enter your username" name="username" ng-model="vm.signup.username" required>
+        </div>
+        <div class="form-group">
+          <label for="username">Email</label>
+          <input type="text" class="form-control" placeholder="Enter your email" name="email" ng-model="vm.signup.email" required>
+        </div>
+        <div class="form-group">
+          <label for="username" class="">Password</label>
+          <input type="password" class="form-control" placeholder="Enter your password" name="password" ng-model="vm.signup.password" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+      <div class="alert alert-danger" ng-if="vm.errorMessage">{{ vm.errorMessage }}</div>
+    </uib-tab>
+  </uib-tabset>
+</div>

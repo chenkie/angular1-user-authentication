@@ -1,0 +1,18 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" ui-sref="home">Angular 1.x Authentication</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li ng-if="authService.isAuthenticated()"><a ui-sref="instructor">Instructors</a></li>
+        <li ng-if="authService.isAuthenticated()"><a ui-sref="profile">Profile</a></li>
+      </ul>
+      <ul class="nav navbar-nav pull-right">
+        <li ng-if="!authService.isAuthenticated()"><a ui-sref="login">Log In</a></li>
+        <li ng-if="authService.isAuthenticated()"><a ui-sref="home" ng-click="authService.logout()">Log Out</a></li>      
+      </ul>      
+    </div>
+  </div>
+</nav>
