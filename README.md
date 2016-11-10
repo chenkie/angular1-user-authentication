@@ -1,9 +1,9 @@
 # Angular 1.x Authentication for Front End Masters
 
-## Protecting Routes Challanges
+## Protecing Resources Challenges
 
-* Add `data { requiresLogin: true }` to the `/profile`, `/instructor` and `/instructor/new` routes
-* Add a method called `isAdmin` to `auth.service.js` and conditionally show and hide the **Add Instructor** button in the `/instructor` view based on whether the user is authenticated and is an admin
+* Make an authenticated `GET` request to the `/instructors` endpoint and display the returned resources in the **Instructors** view
+* Make an authenticated `POST` request to the `/instructors` endpoint to create a new instructor and return to the **Instructors** route to dispaly the newly created resource
 
 ## Running the App
 

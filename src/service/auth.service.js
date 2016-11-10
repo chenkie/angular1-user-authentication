@@ -1,5 +1,3 @@
-import jwtDecode from 'jwt-decode';
-
 class AuthService {
 
   logout() {
@@ -12,10 +10,6 @@ class AuthService {
 
   getToken() {
     return localStorage.getItem('token');
-  }
-
-  isAdmin() {
-    // decode the JWT and check whether the user has a scope of admin
   }
 
   /**

@@ -1,5 +1,3 @@
-// add data: { requiresLogin: true } to the profile, instructor, and newInstructor routes
-
 export default {
   default: '/',
   home: {
