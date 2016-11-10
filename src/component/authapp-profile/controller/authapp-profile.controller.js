@@ -8,9 +8,8 @@ class AuthappProfile {
   payload = {};
 
   $onInit() {
-    this.profile = jwtDecode(this.authService.getToken());
-    this.payload = jwtDecode(this.authService.getToken());
-    this.profile.gravatar = `${this.profile.gravatar}?s=200`;
+    // decode the JWT payload to get access
+    // to the user's profile
   }
 }
 
