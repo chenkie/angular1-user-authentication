@@ -10,9 +10,4 @@ export default {
     url: '/login',
     template: '<authapp-login></authapp-login>',
   },
-  profile: {
-    name: 'profile',
-    url: '/profile',
-    template: '<authapp-profile></authapp-profile>',
-  },
 };

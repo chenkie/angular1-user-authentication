@@ -12,7 +12,7 @@ class AuthappLogin {
         this.authService.finishAuthentication(response.data.token);
         this.login = {};
         this.authManager.authenticate();
-        this.$state.go('profile');
+        this.$state.go('home');
       }, err => {
         this.errorMessage = err.data.message;
       });
