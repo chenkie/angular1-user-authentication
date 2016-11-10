@@ -10,10 +10,10 @@
     <li>Make requests for server resources protected by JWT middleware on the server</li>
     <li>Make requests for server resources that require a specific <code>scope</code> to be present in the JWT payload</li>
   </ul>
-  <p ng-if="!vm.authManager.isAuthenticated()">
+  <p>
     <a class="btn btn-primary btn-lg" ng-click="vm.$state.transitionTo('login')" role="button">Log In</a>
   </p>
-  <p ng-if="vm.authManager.isAuthenticated()">
+  <p>
     <a class="btn btn-primary btn-lg" ng-click="vm.authService.logout();vm.authManager.unauthenticate()" role="button">Log Out</a>
   </p>
 </div>
