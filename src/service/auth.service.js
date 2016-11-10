@@ -15,7 +15,7 @@ class AuthService {
   }
 
   isAdmin() {
-    return jwtDecode(this.getToken()).scope === 'admin';
+    // decode the JWT and check whether the user has a scope of admin
   }
 
   /**

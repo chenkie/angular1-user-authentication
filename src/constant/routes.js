@@ -1,3 +1,5 @@
+// add data: { requiresLogin: true } to the profile, instructor, and newInstructor routes
+
 export default {
   default: '/',
   home: {
@@ -14,24 +16,15 @@ export default {
     name: 'profile',
     url: '/profile',
     template: '<authapp-profile></authapp-profile>',
-    data: {
-      requiresLogin: true,
-    },
   },
   instructor: {
     name: 'instructor',
     url: '/instructor',
     template: '<authapp-instructor></authapp-instructor>',
-    data: {
-      requiresLogin: true,
-    },
   },
   newInstructor: {
     name: 'new-instructor',
     url: '/instructor/new',
     template: '<authapp-new-instructor></authapp-new-instructor>',
-    data: {
-      requiresLogin: true,
-    },
   },
 };

@@ -1,6 +1,7 @@
 <h1>Front End Masters Instructors</h1>
 
-<button class="btn btn-primary" ng-if="vm.authManager.isAuthenticated() && vm.authService.isAdmin()" ui-sref="new-instructor">
+<!-- only show this button if the user is authenticated and is an admin -->
+<button class="btn btn-primary" ui-sref="new-instructor">
   <i class="glyphicon glyphicon-plus"></i> Add Instructor
 </button>
 
