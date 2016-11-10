@@ -13,12 +13,8 @@ class AuthappInstructor {
   }
 
   getInstructors() {
-    this.$http.get(`${API_URL}/instructors`)
-      .then(response => {
-        this.instructors = response.data;
-      }, err => {
-        this.errorMessage = err.data.message;
-      });
+    // make a GET request to the /api/instructors endpoint
+    // to get a list of instructors
   }
 
   getGravatar(email) {

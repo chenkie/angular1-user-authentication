@@ -5,12 +5,9 @@ import { API_URL } from './../../../constant/config';
 class AuthappNewInstructor {
 
   addInstructor(data) {
-    this.$http.post(`${API_URL}/instructors`, data)
-      .then(() => {
-        this.$state.go('instructor');
-      }, error => {
-        console.log(error);
-      });
+    // make a POST request to the /api/instructors endpoint
+    // to add a new instructor. Redirect to the main instructors
+    // route when complete
   }
 }
 
